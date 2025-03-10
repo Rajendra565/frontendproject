@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height:100vh;
+    
+}
+
+.header-image{
+   
+    animation: move 6.5s infinite ease-in-out;
+    
+    
+}
+
+
+.sub-header p{
+    text-align: center;
+}
+.page-1 video{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+li{
+    list-style: none;
+}
+li>a{
+     cursor:pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: 3vh;
+
+}
+img{
+    cursor: pointer;
+}
+.bottom-page-1{
+    position: absolute;
+    bottom: 20%;
+    color: #fff;
+}
+.page-1-h1{
+    font-size: 56px;
+}
+.all-text-page1{
+    width: 70%;
+}
+a:hover{
+    padding: 23px;
+}
+.ul-list{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+.list{
+    display: flex ;
+    justify-content:space-between;
+    
+}
+
+.btn-primar{
+    width: 120px;
+    background: transparent;
+}
+.transparent-button {
+    background-color: transparent;
+    border: 2px solid #fff; /* You can adjust the border color */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  /* Apply hover effect */
+  .transparent-button:hover {
+    background-color: #fff;
+  }
+
+
+/* coming soon  */
+.coming-soon{
+    background: linear-gradient(to right,#3B47C7,#3580BC,#31AEB2);
+    width: 100%;
+    padding: 10px;
+    animation: colorMove 1.5s infinite ease-in-out;
+}
+
+
+  /* footer section */
+
+  .footer {
+    background-color: #f8f9fa; /* Background color of the footer */
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer .footer-widget .social a{
+    transition: 1s ease-in-out ;
+  }
+  .footer .footer-widget .social a:hover{
+    transform: translateY(-5px);
+  }
+
+  @keyframes colorMove {
+    0%{
+        background: linear-gradient(to left,#3580BC,#3B47C7,#31AEB2);
+    }
+    100%{
+        background: linear-gradient(to top,#31AEB2,#3580BC,#3B47C7);
+    }
+  }
+
+  
+
+@keyframes move {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
